@@ -1,7 +1,7 @@
 const locate = window.location.origin;
 let serviceWorkerPath = '/js/service-worker.js';
 
-if ( locate.indexOf('github.io') == -1 ) {
+if ( locate.indexOf('github.io') != -1 ) {
   serviceWorkerPath = '/pwa-sample' + serviceWorkerPath;
 }
 
